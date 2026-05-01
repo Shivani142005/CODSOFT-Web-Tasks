@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>JobBoard</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+    </ul>
+</nav>
+
+<!-- JOB DETAILS -->
+<section class="job-details">
+    <h1>Frontend Developer</h1>
+    <p><strong>Company:</strong> Google</p>
+    <p><strong>Location:</strong> Remote</p>
+
+    <h3>Job Description</h3>
+    <p>
+        We are looking for a skilled frontend developer to build modern,
+        responsive web applications using HTML, CSS, and JavaScript.
+    </p>
+
+    <h3>Requirements</h3>
+    <ul>
+        <li>Good knowledge of HTML, CSS, JavaScript</li>
+        <li>Experience with React (optional)</li>
+        <li>Problem-solving skills</li>
+    </ul>
+
+    <button onclick="showForm()" class="apply-btn">Apply Now</button>
+</section>
+
+<!-- APPLY FORM -->
+<section class="apply-form" id="applyForm">
+    <h2>Apply for this Job</h2>
+
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <input type="file">
+
+    <button onclick="submitApplication()">Submit</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

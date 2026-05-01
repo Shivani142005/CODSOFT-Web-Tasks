@@ -1,0 +1,175 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: #111;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("images/hero.jpg") no-repeat center/cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.hero-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 60px;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+}
+
+.hero-text h3 {
+    margin: 10px 0;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 15px 35px;
+    font-size: 18px;
+    background: #00bcd4;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #008c9e;
+}
+
+.profile {
+    width: 260px;
+    border-radius: 50%;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px;
+    text-align: center;
+    background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+    color: white;
+}
+
+/* SKILLS */
+.skills {
+    padding: 80px;
+    background: #121212;
+    color: white;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 15px;
+    padding: 15px 25px;
+    background: #1f1f1f;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background: #00bcd4;
+}
+
+/* PROJECTS */
+.projects {
+    padding: 80px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+.project-card {
+    width: 260px;
+    margin: 15px;
+    padding: 20px;
+    background: #1c1c1c;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background: #00bcd4;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile {
+        margin-top: 20px;
+    }
+
+    nav ul {
+        display: none;
+    }
+}

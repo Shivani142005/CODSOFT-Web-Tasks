@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Tech</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>NextGen Tech</h2>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero fade">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>Build Your Future with Technology</h1>
+        <p>We create modern web, AI, and data solutions.</p>
+        <button class="btn">Get Started</button>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about fade">
+    <h2>About Us</h2>
+    <p>
+        We are a team focused on delivering high-quality digital solutions using modern technologies.
+        Our goal is to help businesses grow with innovation.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services fade">
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card fade">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Modern responsive websites</p>
+        </div>
+
+        <div class="card fade">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h3>App Development</h3>
+            <p>Scalable applications</p>
+        </div>
+
+        <div class="card fade">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Machine Learning</h3>
+            <p>AI-powered solutions</p>
+        </div>
+
+        <div class="card fade">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Data Science</h3>
+            <p>Data-driven insights</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- FEATURES -->
+<section id="features" class="features fade">
+    <h2>Why Choose Us</h2>
+
+    <div class="cards">
+
+        <div class="card fade">
+            <i class="fa-solid fa-star"></i>
+            <h3>High Quality</h3>
+            <p>Clean and professional work</p>
+        </div>
+
+        <div class="card fade">
+            <i class="fa-solid fa-rocket"></i>
+            <h3>Fast Delivery</h3>
+            <p>Quick project turnaround</p>
+        </div>
+
+        <div class="card fade">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Secure</h3>
+            <p>Safe and reliable systems</p>
+        </div>
+
+        <div class="card fade">
+            <i class="fa-solid fa-headset"></i>
+            <h3>Support</h3>
+            <p>24/7 customer support</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA (CONTACT) -->
+<section id="contact" class="cta fade">
+    <h2>Start Your Journey Today</h2>
+    <button class="btn">Join Now</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 NextGen Tech | All Rights Reserved</p>
+</footer>
+
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
+const elements = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+
+        if (top < window.innerHeight - 100) {
+            el.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
